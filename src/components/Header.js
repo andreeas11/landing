@@ -5,7 +5,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <a href="/" className="logo">Agro Manager</a>
+      <a href="#landing_page" className="logo">Agro Manager</a>
       <nav className="nav-links">
         <a href="#features">Features</a>
         <a href="#pricing">Pricing</a>
