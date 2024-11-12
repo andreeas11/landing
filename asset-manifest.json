@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/agroManager-landing/static/css/main.dfe415a0.css",
-    "main.js": "/agroManager-landing/static/js/main.56b1ccea.js",
+    "main.css": "/agroManager-landing/static/css/main.ce9d29c5.css",
+    "main.js": "/agroManager-landing/static/js/main.f60e92f6.js",
     "static/js/453.91d70c2b.chunk.js": "/agroManager-landing/static/js/453.91d70c2b.chunk.js",
     "static/media/l.jpg": "/agroManager-landing/static/media/l.57455dee679ce1b25ef2.jpg",
     "index.html": "/agroManager-landing/index.html",
-    "main.dfe415a0.css.map": "/agroManager-landing/static/css/main.dfe415a0.css.map",
-    "main.56b1ccea.js.map": "/agroManager-landing/static/js/main.56b1ccea.js.map",
+    "main.ce9d29c5.css.map": "/agroManager-landing/static/css/main.ce9d29c5.css.map",
+    "main.f60e92f6.js.map": "/agroManager-landing/static/js/main.f60e92f6.js.map",
     "453.91d70c2b.chunk.js.map": "/agroManager-landing/static/js/453.91d70c2b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfe415a0.css",
-    "static/js/main.56b1ccea.js"
+    "static/css/main.ce9d29c5.css",
+    "static/js/main.f60e92f6.js"
   ]
 }
