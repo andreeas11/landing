@@ -109,7 +109,7 @@
     position: sticky; /* Sticks to the top */
     top: 0;
     z-index: 100;
-    background-color: #75aa91; /* Slightly transparent */
+    background-color: rgba(117, 170, 145, 0.6); /* Slightly transparent */
     backdrop-filter: blur(10px); /* Adds a subtle blur effect */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
     padding: 10px 20px;
@@ -184,7 +184,7 @@
     padding: 95px 0px;
     background-image: url('./l.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center -70px;
     /*background: #1f2937; /* Subtle gradient background */
     color: black; /* White text color for contrast */
     min-height: 80vh; /* Take up most of the viewport height */
