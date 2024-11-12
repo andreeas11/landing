@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/agroManager-landing/static/css/main.fc44e2a6.css",
+    "main.js": "/agroManager-landing/static/js/main.350f20bb.js",
+    "static/js/453.91d70c2b.chunk.js": "/agroManager-landing/static/js/453.91d70c2b.chunk.js",
+    "static/media/l.jpg": "/agroManager-landing/static/media/l.0d2101c624430b3d88ab.jpg",
+    "index.html": "/agroManager-landing/index.html",
+    "main.fc44e2a6.css.map": "/agroManager-landing/static/css/main.fc44e2a6.css.map",
+    "main.350f20bb.js.map": "/agroManager-landing/static/js/main.350f20bb.js.map",
+    "453.91d70c2b.chunk.js.map": "/agroManager-landing/static/js/453.91d70c2b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc44e2a6.css",
+    "static/js/main.350f20bb.js"
+  ]
+}
