@@ -1,0 +1,578 @@
+/* styles.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb; /* Light gray background */
+    color: #333; /* Dark text */
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  section {
+    padding: 40px 0;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* For sections with cards, adjust spacing */
+  section .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  section .grid.md\:grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @media (max-width: 768px) {
+    section .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+/* Card styling */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-icon {
+    font-size: 2rem;
+    color: #4b6cb7; /* Accent color for icons */
+    margin-bottom: 16px;
+  }
+  
+  .card-header {
+    background-color: #f3f4f6;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4b5563;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: #1f2937;
+  }
+  
+  .card-content {
+    padding: 20px;
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  
+  /* Adjust spacing for smaller screens */
+  @media (max-width: 768px) {
+    .card-header {
+      padding: 15px;
+    }
+    .card-content {
+      padding: 15px;
+    }
+  }
+
+/* Header Styling */
+.header {
+    position: sticky; /* Sticks to the top */
+    top: 0;
+    z-index: 100;
+    background-color: #75aa91; /* Slightly transparent */
+    backdrop-filter: blur(10px); /* Adds a subtle blur effect */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #95b85c; /* Accent color */
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #95b85c; /* Change color on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #074a02;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #74d34b; /* Darken on hover */
+  }
+  
+  /* Responsive Design: Show hamburger menu on small screens */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide links on small screens */
+    }
+    .menu-toggle {
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #4b6cb7;
+    }
+  }  
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    background-image: url('./l.jpg');
+    /*background: #1f2937; /* Subtle gradient background */
+    color: black; /* White text color for contrast */
+    min-height: 80vh; /* Take up most of the viewport height */
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px; /* Limit width for readability */
+    color: black; /* Slightly muted text color */
+  }
+  
+  .hero .cta-button {
+    background-color: #074a02; /* CTA button color */
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .cta-button:hover {
+    background-color: #74d34b; /* Darken on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem; /* Smaller font size on mobile */
+    }
+    .hero p {
+      font-size: 1rem; /* Adjust paragraph size for mobile */
+    }
+  }
+  
+/* Value Proposition Section */
+.value-proposition {
+    padding: 60px 20px;
+    background-color: #1f2937; /* Very light gray */
+    color: white;
+    text-align: center;
+  }
+  
+  .value-proposition h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .value-proposition p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+  
+  .value-proposition .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  /* Card Styling */
+  .value-card {
+    background-color: #20341d;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  .value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .value-card .icon {
+    font-size: 2rem;
+    color: #4b6cb7; /* Accent color for icons */
+    margin-bottom: 16px;
+  }
+  
+  .value-card .card-header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4b6cb7;
+    margin-bottom: 10px;
+  }
+  
+  .value-card .card-content {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .value-proposition h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+/* Footer Styling */
+footer {
+    background-color: #1f2937; /* Dark gray */
+    color: white;
+    padding: 40px 0;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 40px; /* Space between columns */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #1b7d2c; /* Highlight color */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr; /* Stack columns on mobile */
+      text-align: center; /* Center the text */
+    }
+  
+    .footer-section {
+      margin-bottom: 20px; /* Add spacing between sections */
+    }
+  }
+
+/* Common Section Styling */
+.section {
+    padding: 60px 20px;
+    background-color: #75aa91; /* Light gray background for sections */
+    color: white;
+    text-align: center;
+  }
+  
+  /* Common Section Heading */
+  .section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  /* Grid Layout for Cards */
+  .section .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  /* Card Styling (reuse from Competitive Advantage) */
+  .card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-icon {
+    font-size: 2rem;
+    color: #4b6cb7; /* Accent color for icons */
+    margin-bottom: 16px;
+  }
+  
+  /* Card Header Styling */
+  .card-header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4b6cb7;
+    margin-bottom: 16px;
+  }
+  
+  /* Card Content Styling */
+  .card-content {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Section Heading for Mobile */
+  @media (max-width: 768px) {
+    .section h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+
+/* Competitive Advantage Section */
+.competitive-advantage {
+    padding: 60px 20px;
+    background-color: #1f2937; /* Light gray background */
+    color: white; /* white text color */
+    text-align: center;
+  }
+  
+  .competitive-advantage h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .competitive-advantage .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .card {
+    background-color: #20341d; /* White background for cards */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px; /* Limit max width for readability */
+  }
+  
+  .card:hover {
+    transform: translateY(-8px); /* Slight upward shift */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+  .card-icon {
+    font-size: 2rem;
+    color: #4b6cb7; /* Accent color for icons */
+    margin-bottom: 16px;
+  }
+
+  .card-header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4b6cb7; /* Accent color */
+    margin-bottom: 16px;
+  }
+  
+  .card-content {
+    font-size: 1rem;
+    color: #666; /* Light gray for content text */
+    line-height: 1.6;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .competitive-advantage h2 {
+      font-size: 1.5rem; /* Smaller heading on mobile */
+    }
+  }
+  
+
+/* Email Signup Section */
+.email-signup {
+    background-color: #75aa91; /* Light blue background */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .email-signup h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .email-signup p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .email-signup form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .email-signup input {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: 2px solid #fff; /* White border */
+    outline: none;
+    background-color: #ffffff; /* White background for the input */
+    color: #333; /* Dark text for readability */
+    width: 100%;
+    max-width: 400px;
+    transition: border 0.3s ease;
+  }
+  
+  .email-signup input:focus {
+    border-color: #074a02; /* Highlight the input field on focus */
+  }
+  
+  .email-signup button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    background-color: #074a02; /* Button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .email-signup button:hover {
+    background-color: #74d34b; /* Darker shade of the button */
+  }
+  
+  .email-signup button:focus {
+    outline: none;
+    background-color: #74d34b; /* Highlight the button on focus */
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .email-signup h2 {
+      font-size: 1.5rem; /* Smaller heading on mobile */
+    }
+  
+    .email-signup p {
+      font-size: 1rem; /* Smaller description on mobile */
+    }
+  
+    .email-signup form {
+      flex-direction: column; /* Stack input and button vertically */
+    }
+  
+    .email-signup input {
+      width: 100%; /* Make input take full width on mobile */
+    }
+  
+    .email-signup button {
+      width: 100%; /* Make button take full width on mobile */
+    }
+  }
+  
