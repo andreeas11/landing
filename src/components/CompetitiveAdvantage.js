@@ -16,7 +16,7 @@ export default function CompetitiveAdvantage() {
     },
     {
       icon: "💵",
-      title: "Flexible Pricing",
+      title: "Flexible Pricing Options",
       content:
         "Subscription plans based on farm size, making it accessible to small, medium, and large farms alike.",
     },

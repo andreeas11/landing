@@ -10,7 +10,7 @@ export default function ValueProposition() {
     },
     {
       icon: "🔒",
-      title: "Data Security",
+      title: "Comprehensive Data Security",
       content:
         "Your data is securely stored, ensuring privacy and peace of mind while using our platform.",
     },
@@ -30,7 +30,7 @@ export default function ValueProposition() {
 
   return (
     <section className="value-proposition">
-      <h2>Our Value Proposition</h2>
+      <h2 style={{ textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)" }}>Our Value Proposition</h2>
       <p>Discover the unique benefits of our platform that make it the right choice for your farm's success.</p>
       <div className="grid">
         {propositions.map((prop, index) => (

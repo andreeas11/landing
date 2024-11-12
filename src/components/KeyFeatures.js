@@ -24,7 +24,7 @@ export default function KeyFeatures() {
 
   return (
     <section className="section">
-      <h2>Key Features</h2>
+      <h2 style={{ textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)" }}>Key Features</h2>
       <div className="grid">
         {features.map((prop, index) => (
           <div key={index} className="value-card">

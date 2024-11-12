@@ -12,6 +12,7 @@
     background-color: #f9fafb; /* Light gray background */
     color: #333; /* Dark text */
     line-height: 1.6;
+    background-color: #75aa91;
   }
   
   h1, h2, h3 {
@@ -56,6 +57,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .card:hover {
@@ -70,10 +72,12 @@
   }
   
   .card-header {
+    border-radius: 8px;
     background-color: #f3f4f6;
     padding: 20px;
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
     color: #4b5563;
   }
   
@@ -85,6 +89,7 @@
   .card-content {
     padding: 20px;
     font-size: 1rem;
+    text-align: center;
     color: #6b7280;
     line-height: 1.6;
   }
@@ -112,6 +117,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border-radius: 8px;
   }
   
   .header .logo {
@@ -148,6 +154,7 @@
     border-radius: 8px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .cta-button:hover {
@@ -174,12 +181,16 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 80px 20px;
+    padding: 95px 0px;
     background-image: url('./l.jpg');
+    background-size: cover;
     /*background: #1f2937; /* Subtle gradient background */
     color: black; /* White text color for contrast */
     min-height: 80vh; /* Take up most of the viewport height */
-  }
+    border-radius: 8px;
+    width: 100%;
+    position: relative;
+}
   
   .hero h1 {
     font-size: 3rem;
@@ -205,10 +216,40 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .hero .cta-button:hover {
     background-color: #74d34b; /* Darken on hover */
+  }
+
+ .arrow-container {
+    animation: bounce 1.5s infinite;
+  }
+
+  .arrow {
+    font-size: 50px;
+    color: #f5f5f5;
+    position: absolute; /* Absolute positioning to avoid affecting the layout */
+    margin-top: -15vh;
+    margin-left: -2vw;
+    top: calc(100% + 10px); /* Place it directly below the button with a little spacing */
+    left: 50%; /* Position the arrow in the center */
+    transform: translateX(-50%); /* Offset to truly center it */
+    animation: bounce 1.5s infinite; /* Apply bounce animation */
+    cursor: pointer;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
   
   /* Responsive Styles */
@@ -397,6 +438,9 @@ footer {
     font-size: 2rem;
     color: #4b6cb7; /* Accent color for icons */
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   /* Card Header Styling */
@@ -499,7 +543,6 @@ footer {
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: 700;
-    text-transform: uppercase;
   }
   
   .email-signup p {
@@ -542,6 +585,7 @@ footer {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .email-signup button:hover {

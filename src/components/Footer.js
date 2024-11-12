@@ -18,7 +18,7 @@ export default function Footer() {
           <h3>Company</h3>
           <ul>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li ><a href="#contact">Contact</a></li>
           </ul>
         </div>
 
