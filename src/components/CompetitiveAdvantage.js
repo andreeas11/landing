@@ -30,7 +30,6 @@ export default function CompetitiveAdvantage() {
 
   return (
     <section className="competitive-advantage">
-      <h2>Why Choose Agro Manager?</h2>
       <div className="grid">
         {advantages.map((prop, index) => (
           <div key={index} className="value-card">
@@ -39,12 +38,6 @@ export default function CompetitiveAdvantage() {
             <div className="card-content">{prop.content}</div>
           </div>
         ))}
-        {/* {advantages.map((advantage, index) => (
-          <div key={index} className="card">
-            <div className="card-header">{advantage.title}</div>
-            <div className="card-content">{advantage.content}</div>
-          </div>
-        ))} */}
       </div>
     </section>
   );

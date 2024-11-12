@@ -16,7 +16,6 @@ export default function LandingPage() {
         <Hero />
         <KeyFeatures />
         <ValueProposition />
-        <CustomerSegments />
         <CompetitiveAdvantage />
         <EmailSignup />
       </main>

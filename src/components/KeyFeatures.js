@@ -20,12 +20,6 @@ export default function KeyFeatures() {
       content:
         "Generate reports tailored to your farm’s specific needs and track key metrics.",
     },
-    {
-      icon:"🌍",
-      title: "Remote Access",
-      content:
-        "Manage your farm from anywhere, with real-time updates and notifications.",
-    },
   ];
 
   return (
@@ -39,12 +33,6 @@ export default function KeyFeatures() {
             <div className="card-content">{prop.content}</div>
           </div>
         ))}
-        {/* {features.map((feature, index) => (
-          <div key={index} className="card">
-            <div className="card-header">{feature.title}</div>
-            <div className="card-content">{feature.content}</div>
-          </div>
-        ))} */}
       </div>
     </section>
   );
