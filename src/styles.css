@@ -184,6 +184,7 @@
     padding: 95px 0px;
     background-image: url('./l.jpg');
     background-size: cover;
+    background-position: center center;
     /*background: #1f2937; /* Subtle gradient background */
     color: black; /* White text color for contrast */
     min-height: 80vh; /* Take up most of the viewport height */
@@ -254,6 +255,17 @@
   
   /* Responsive Styles */
   @media (max-width: 768px) {
+    .hero {
+      padding: 50px 0px; /* Adjust padding for smaller screens */
+    min-height: 100vh; /* Full height on mobile */
+      background-size: cover; /* Make sure the entire image fits within the container */
+      background-position: center center; /* Ensure it is centered on mobile */
+    }
+    .arrow {
+      margin-left: -10vw;
+      font-size: 80px; /* Reduce the size of the arrow on mobile */
+      top: calc(100% + 15px); /* Adjust the position slightly for smaller screens */
+    }
     .hero h1 {
       font-size: 2rem; /* Smaller font size on mobile */
     }

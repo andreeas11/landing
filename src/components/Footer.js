@@ -9,7 +9,7 @@ export default function Footer() {
           <h3>Product</h3>
           <ul>
             <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#pricing" >Pricing</a></li>
           </ul>
         </div>
 
