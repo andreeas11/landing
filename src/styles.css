@@ -290,7 +290,7 @@
   
   .value-proposition p {
     font-size: 1.1rem;
-    color: #666;
+    color: white;
     max-width: 700px;
     margin: 0 auto 40px;
     line-height: 1.6;
@@ -335,7 +335,7 @@
   
   .value-card .card-content {
     font-size: 1rem;
-    color: #666;
+    color: white;
     line-height: 1.6;
   }
   
@@ -466,7 +466,7 @@ footer {
   /* Card Content Styling */
   .card-content {
     font-size: 1rem;
-    color: #666;
+    color: white;
     line-height: 1.6;
   }
   
@@ -529,7 +529,7 @@ footer {
   
   .card-content {
     font-size: 1rem;
-    color: #666; /* Light gray for content text */
+    color: white;
     line-height: 1.6;
   }
   

@@ -11,10 +11,10 @@ export default function Hero() {
 
   return (
     <section className="hero">
-      <h1 style={{ color: "#f5f5f5", textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)" }}>
+      <h1 style={{ color: "#ffffff", textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)" }}>
         Welcome to Quick Fix
       </h1>
-      <p style={{ color: "#f5f5f5", textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)" }}>
+      <p style={{ color: "#ffffff", textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)" }}>
       Find Trusted Service Providers, Anytime, Anywhere
       </p>
       <button className="cta-button">Get Started</button>
