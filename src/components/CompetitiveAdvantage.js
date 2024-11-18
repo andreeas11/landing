@@ -4,27 +4,27 @@ export default function CompetitiveAdvantage() {
   const advantages = [
     {
       icon: "📊",
-      title: "Comprehensive Solution",
+      title: "Comprehensive Service Categories",
       content:
-        "Full integration of critical metrics for production optimization, including detailed breeding history and vaccination records.",
+        "Offers a wide range of services in one platform, from technical repairs to personal household services.",
     },
     {
-      icon: "💉",
-      title: "Specialized Features",
+      icon: "📅",
+      title: "Advanced Booking and Filtering Options",
       content:
-        "Support for rabbit farm management, automated breeding scheduling, and vaccination tracking.",
+        "Enables users to find providers by rating, proximity, availability, and price.",
     },
     {
       icon: "💵",
-      title: "Flexible Pricing Options",
+      title: "Affordable and Scalable Plans",
       content:
-        "Subscription plans based on farm size, making it accessible to small, medium, and large farms alike.",
+        "Accessible to independent professionals and small businesses, with options for premium features.",
     },
     {
       icon: "😊",
       title: "User-Friendly Interface",
       content:
-        "Intuitive design that makes farm management easier, even for those new to digital tools.",
+        "Intuitive design that makes connecting customers with service providers easier, even for those new to digital tools.",
     },
   ];
 

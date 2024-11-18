@@ -4,21 +4,27 @@ export default function KeyFeatures() {
   const features = [
     {
       icon: "📅",
-      title: "Automated Scheduling",
+      title: "Advanced Search and Booking Options",
       content:
-        "Streamline breeding schedules and ensure vaccinations are administered on time.",
+        "Effortlessly find the perfect service provider using filters like ratings, proximity, availability, and budget, and book instantly through the app.",
     },
     {
-      icon:"📈",
-      title: "Data Analytics",
+      icon:"✔",
+      title: "Verified Reviews and Profiles",
       content:
-        "Get detailed insights into farm operations, helping you make informed decisions.",
+        "Make confident decisions with transparent reviews and detailed, verified profiles of service providers.",
     },
     {
-      icon:"📃",
-      title: "Customizable Reports",
+      icon:"🔎",
+      title: "Customizable Profiles and Visibility Tools",
       content:
-        "Generate reports tailored to your farm’s specific needs and track key metrics.",
+        "Create a professional profile showcasing your skills, services, and availability, and use priority listing options to increase visibility.",
+    },
+    {
+      icon:"📅",
+      title: "Booking and Schedule Management",
+      content:
+        "Easily manage appointments, track bookings, and streamline communication with clients through the app.",
     },
   ];
 

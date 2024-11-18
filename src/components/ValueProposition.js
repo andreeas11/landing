@@ -3,10 +3,10 @@ import React from 'react';
 export default function ValueProposition() {
   const propositions = [
     {
-      icon: "🌱", // Use icons or replace with actual images/icons if preferred
-      title: "Increased Productivity",
+      icon: "🔢", 
+      title: "Numbers",
       content:
-        "Optimize your farm operations with data-driven insights, leading to higher yields and profitability.",
+        "Number of active users and number of bookings completed through the platform.",
     },
     {
       icon: "🔒",
@@ -15,23 +15,23 @@ export default function ValueProposition() {
         "Your data is securely stored, ensuring privacy and peace of mind while using our platform.",
     },
     {
-      icon: "⚙️",
-      title: "Customizable Tools",
+      icon: "📈",
+      title: "Metrics",
       content:
-        "Flexible tools that adapt to the unique needs of your farm, enhancing usability and functionality.",
+        "Average time to book a service along with the retention rate for both customer and provider segments.",
     },
     {
-      icon: "📈",
-      title: "Growth Potential",
+      icon: "😄",
+      title: "Customer Satisfaction",
       content:
-        "Scalable features that grow with your farm, supporting you every step of the way.",
+        "Customer satisfaction score based on reviews and feedback.",
     },
   ];
 
   return (
     <section className="value-proposition">
       <h2 style={{ textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)" }}>Our Value Proposition</h2>
-      <p>Discover the unique benefits of our platform that make it the right choice for your farm's success.</p>
+      <p>We connect customers with reliable service providers, saving time and reducing the hassle of finding qualified professionals, while empowering providers to grow their client base and streamline their operations.</p>
       <div className="grid">
         {propositions.map((prop, index) => (
           <div key={index} className="value-card">

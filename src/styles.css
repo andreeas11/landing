@@ -12,7 +12,7 @@
     background-color: #f9fafb; /* Light gray background */
     color: #333; /* Dark text */
     line-height: 1.6;
-    background-color: #75aa91;
+    background-color: #1f2937;
   }
   
   h1, h2, h3 {
@@ -109,7 +109,7 @@
     position: sticky; /* Sticks to the top */
     top: 0;
     z-index: 100;
-    background-color: rgba(117, 170, 145, 0.6); /* Slightly transparent */
+    background-color: rgba(101, 170, 189, 0.6); /* Slightly transparent */
     backdrop-filter: blur(10px); /* Adds a subtle blur effect */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
     padding: 10px 20px;
@@ -182,7 +182,7 @@
     align-items: center;
     text-align: center;
     padding: 95px 0px;
-    background-image: url('./l.jpg');
+    background-image: url('./handyman.png');
     background-size: cover;
     background-position: center -70px;
     /*background: #1f2937; /* Subtle gradient background */
@@ -305,7 +305,7 @@
   
   /* Card Styling */
   .value-card {
-    background-color: #20341d;
+    background-color: #2f4e98;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -410,7 +410,7 @@ footer {
 /* Common Section Styling */
 .section {
     padding: 60px 20px;
-    background-color: #75aa91; /* Light gray background for sections */
+    background-color: #2f8f97; /* Light gray background for sections */
     color: white;
     text-align: center;
   }
@@ -500,7 +500,7 @@ footer {
   }
   
   .card {
-    background-color: #20341d; /* White background for cards */
+    background-color: #4b6cb7; /* White background for cards */
     border-radius: 12px; /* Rounded corners */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     padding: 30px;
@@ -543,7 +543,7 @@ footer {
 
 /* Email Signup Section */
 .email-signup {
-    background-color: #75aa91; /* Light blue background */
+    background-color: #2f8f97; /* Light blue background */
     color: white;
     padding: 60px 20px;
     text-align: center;

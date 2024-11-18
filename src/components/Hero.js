@@ -12,10 +12,10 @@ export default function Hero() {
   return (
     <section className="hero">
       <h1 style={{ color: "#f5f5f5", textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)" }}>
-        Welcome to Agro Manager
+        Welcome to Quick Fix
       </h1>
       <p style={{ color: "#f5f5f5", textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)" }}>
-        Simplifying farm management with cutting-edge technology. Get insights, track progress, and optimize operations for a thriving business.
+      Find Trusted Service Providers, Anytime, Anywhere
       </p>
       <button className="cta-button">Get Started</button>
       <IoIosArrowDown 
