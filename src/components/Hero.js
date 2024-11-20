@@ -11,13 +11,13 @@ export default function Hero() {
 
   return (
     <section className="hero">
-      <h1 style={{ color: "#ffffff", textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)" }}>
+      <h1 style={{ color: "#ffffff", textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)", marginLeft: "-50vw" }}>
         Welcome to Quick Fix
       </h1>
-      <p style={{ color: "#ffffff", textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)" }}>
+      <p style={{ color: "#ffffff", textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)", marginLeft: "-50vw" }}>
       Find Trusted Service Providers, Anytime, Anywhere
       </p>
-      <button className="cta-button">Get Started</button>
+      <button className="cta-button" style={{ marginLeft: "-50vw"}}>Get Started</button>
       <IoIosArrowDown 
         className="arrow"
         onClick={scrollDown} // Add onClick event to trigger scroll

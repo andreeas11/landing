@@ -183,8 +183,9 @@
     text-align: center;
     padding: 95px 0px;
     background-image: url('./ll.png');
-    background-size: cover;
-    background-position: center -70px;
+    background-size: 700px auto;
+    background-position: right center;
+    background-repeat: no-repeat;
     /*background: #1f2937; /* Subtle gradient background */
     color: black; /* White text color for contrast */
     min-height: 80vh; /* Take up most of the viewport height */
