@@ -182,9 +182,9 @@
     align-items: center;
     text-align: center;
     padding: 95px 0px;
-    background-image: url('./ll.png');
-    background-size: 700px auto;
-    background-position: right center;
+    background-image: url('./handyman.png');
+    background-size: 500px auto;
+    background-position: 88% center;
     background-repeat: no-repeat;
     /*background: #1f2937; /* Subtle gradient background */
     color: black; /* White text color for contrast */
