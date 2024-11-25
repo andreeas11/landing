@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { firestore } from "../firebase";
+import posthog from 'posthog-js';
 
 const Newsletter = () => {
   const [name, setName] = useState("");
@@ -15,6 +16,9 @@ const Newsletter = () => {
         name: name,
         email: email,
       });
+
+      posthog.identify(name, {name: name});
+      posthog.capture('newsletter subscribe', { property: 'value' })
 
       setStatus("Thank you for subscribing!");
       setName("");

@@ -1,11 +1,14 @@
 import LandingPage from './components/LandingPage';
 import './styles.css';
+import { CSPostHogProvider } from './providers'
 
 function App() {
   return (
-    <div>
-      <LandingPage />
-    </div>
+    // <CSPostHogProvider>
+      <div>
+        <LandingPage />
+      </div>
+    // </CSPostHogProvider>
   );
 }
 
