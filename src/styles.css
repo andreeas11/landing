@@ -257,10 +257,11 @@
   /* Responsive Styles */
   @media (max-width: 768px) {
     .hero {
-      padding: 50px 0px; /* Adjust padding for smaller screens */
-    min-height: 100vh; /* Full height on mobile */
-      background-size: cover; /* Make sure the entire image fits within the container */
-      background-position: center center; /* Ensure it is centered on mobile */
+      background-size: 400px auto;
+      background-position: 50% center;
+      background-repeat: no-repeat;
+      margin-top: 6vh;
+      
     }
     .arrow {
       margin-left: -10vw;
@@ -269,9 +270,15 @@
     }
     .hero h1 {
       font-size: 2rem; /* Smaller font size on mobile */
+      margin-right: -45vw;
+      margin-top: -70vh;
     }
     .hero p {
       font-size: 1rem; /* Adjust paragraph size for mobile */
+      margin-right: -45vw;
+    }
+    .hero .cta-button {
+      margin-right: -45vw;
     }
   }
   

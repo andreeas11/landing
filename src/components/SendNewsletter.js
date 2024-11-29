@@ -48,7 +48,7 @@ const SendNewsletter = () => {
   };
 
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial" }}>
+    <div style={{ padding: "20px", fontFamily: "Arial", color: "White" }}>
       <h1>Lista de E-mailuri</h1>
 
       {/* Buton pentru a afișa lista de e-mailuri */}
