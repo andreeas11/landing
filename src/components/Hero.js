@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
 import NewsletterPopup from "./Newsletter"; // Import your popup component
-import posthog from "posthog-js";
 
 export default function Hero() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -14,8 +13,7 @@ export default function Hero() {
   };
 
   const redirectToApp = () => {
-      posthog.capture("get app", { property: "value" });
-      window.location.href = "https://we.tl/t-6VEtIHF430";
+    window.location.href = "https://we.tl/t-6VEtIHF430";
   };
 
   return (
@@ -28,7 +26,13 @@ export default function Hero() {
       </p>
 
       {/* Button Container */}
-      <div style={{ display: "flex", gap: "1rem", marginLeft: "-45vw" }}>
+      <div style={{
+        display: "flex",
+        flexWrap: "wrap", // Allow wrapping on smaller screens
+        gap: "1rem",
+        marginLeft: "-45vw",
+        justifyContent: "flex-start", // Align buttons properly
+      }}>
         <button className="cta-button"
           onClick={() => setIsPopupOpen(true)} // Open popup on click
         >
